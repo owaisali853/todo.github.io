@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-analytics.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        // import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+        // import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyDyZiuiHFakMnx7FNxyLhniOVWYFFPCNX0",
+          authDomain: "todoapp-86931.firebaseapp.com",
+          projectId: "todoapp-86931",
+          storageBucket: "todoapp-86931.appspot.com",
+          messagingSenderId: "908509736900",
+          appId: "1:908509736900:web:80638c0c870d9f7fc9fe91",
+          measurementId: "G-MHNE1PQ7H0"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+      
+</head>
+<body>
+    <br>
+    <h1>Singup For Todo App</h1> <br>
+    <form action="get">
+        <label for="">First And Last Name:</label> <br>
+        <input type="text" placeholder="First And Last Name">
+        <br> <br>
+        <label for="">Email:</label> <br> 
+        <input type="text" placeholder="Email"><br> <br>
+        <label for="">Password:</label> <br>
+        <input type="password" placeholder="Password"> <br> <br>
+        <label for="">Password:</label> <br>
+        <input type="password" placeholder="Confrim Password"> <br><br>
+        <a id="button" onclick="saveData()" href="login.html"> Creat Account</a> 
+
+        
+    </form>
+</body>
+</html>
